@@ -1,0 +1,346 @@
+nav {
+    text-decoration: none;
+    color: black;
+    margin: 10px auto;
+    height: 60px;
+    width: 100%;
+}
+
+.container {
+    background-image: url("bg-img-1.jpg");
+    background-size: contain;
+    height: 440px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    color: #f44336; 
+}
+
+.form-group {
+    position: relative;
+  
+}
+
+.btn-red {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.btn-red:hover {
+    background-color: #d32f2f;
+}
+
+.help-text {
+    color: #f44336; 
+}
+
+form {
+    background-color: aliceblue;
+    width: 990px;
+    height: 200px;
+    margin: 99px 0 0 25px;
+}
+
+.button1 {
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+  
+}
+
+.header-section {
+    display: flex;
+    margin: 15px 0 0 200px;
+}
+
+.header-logo img {
+    margin-right: 15px;
+}
+
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-right: 680px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+.row {
+    margin-top: 150px;
+
+}
+
+.slideshow-container {
+position: relative;
+max-width: 100%;
+margin: auto;
+overflow: hidden;
+margin-top: 30px;
+}
+
+
+.mySlides {
+display: none;
+}
+
+
+
+
+.dot-container {
+text-align: center;
+position: relative;
+bottom: 20px;
+width: 100%;
+}
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 5px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+background-color: #717171;
+}
+.rob{
+
+background-image:url("bg-img-2.jpg" ); 
+
+
+background-position: center; 
+
+
+width: 100%;
+
+display: flex;
+
+
+}
+.len{
+width: 450px;
+height: 40px;
+background-color: aliceblue;
+padding: 30px 20px 20px 20px;
+gap: 10px;
+}
+.len1{
+width: 450px;
+height: 200px;
+background-color: aliceblue;
+}
+
+.len2{
+width: 450px;
+height:60px ;
+background-color: #d32f2f;
+color:white;
+}
+.form{
+background-image: url(bg-img-3.jpg);
+display: flex;
+text-align: center;
+padding: 30px 30px 30px 95px;
+}
+.highlight{
+color: RED;
+}
+
+
+/* For mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .header-section {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .container {
+        margin-top: 50px;
+        height: auto;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-group .btn {
+        margin-bottom: 10px;
+    }
+
+    .row {
+        margin-top: 20px;
+    }
+
+    .len, .len1, .len2 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .slideshow-container {
+        margin-top: 20px;
+    }
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .header-title {
+        margin: 0;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-group .btn {
+        margin-bottom: 10px;
+    }
+
+    .rob {
+        flex-direction: column;
+    }
+
+    .rob div {
+        margin: 10px 0;
+    }
+
+    .form {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .len, .len1, .len2 {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* For desktops (max-width: 992px) */
+@media (max-width: 992px) {
+    .header {
+        margin: 0;
+    }
+
+    .header-section {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .container {
+        margin-top: 50px;
+        height: auto;
+    }
+
+    form {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .slideshow-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .len, .len1, .len2 {
+        width: 100%;
+    }
+
+    .rob {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rob div {
+        margin: 10px 0;
+    }
+
+    .form {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* For large desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .header {
+        margin-right: 20px;
+    }
+
+    .header-section {
+        margin: 10px;
+    }
+
+    .container {
+        margin-top: 70px;
+        height: auto;
+    }
+
+    form {
+        width: 85%;
+        margin: 50px auto;
+    }
+
+    .slideshow-container {
+        margin-top: 30px;
+    }
+
+    .form {
+        padding: 30px;
+    }
+
+    .rob {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .rob div {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link href="project-1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Project</title>
+    <style>
+        nav {
+            text-decoration: none;
+            color: black;
+            margin: 10px auto;
+            height: 60px;
+            width: 100%;
+        }
+
+        .container {
+            background-image: url("bg-img-1.jpg");
+            background-size: contain;
+            height: 440px;
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        .form-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            color: #f44336;
+        }
+
+        .form-group {
+            position: relative;
+
+        }
+
+        .btn-red {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+
+        .btn-red:hover {
+            background-color: #d32f2f;
+        }
+
+        .help-text {
+            color: #f44336;
+        }
+
+        form {
+            background-color: aliceblue;
+            width: 990px;
+            height: 200px;
+            margin: 99px 0 0 25px;
+        }
+
+        .button1 {
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+
+        }
+
+        .header-section {
+            display: flex;
+            margin: 15px 0 0 200px;
+        }
+
+        .header-logo img {
+            margin-right: 15px;
+        }
+
+        .header-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 1px;
+            margin-right: 680px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            margin-right: 50px;
+        }
+
+        .row {
+            margin-top: 150px;
+
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+
+
+        .mySlides {
+            display: none;
+        }
+
+
+
+
+        .dot-container {
+            text-align: center;
+            position: relative;
+            bottom: 20px;
+            width: 100%;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        .rob {
+
+            background-image: url("bg-img-2.jpg");
+
+
+            background-position: center;
+
+
+            width: 100%;
+
+            display: flex;
+
+
+        }
+
+        .len {
+            width: 450px;
+            height: 40px;
+            background-color: aliceblue;
+            padding: 30px 20px 20px 20px;
+            gap: 10px;
+        }
+
+        .len1 {
+            width: 450px;
+            height: 200px;
+            background-color: aliceblue;
+        }
+
+        .len2 {
+            width: 450px;
+            height: 60px;
+            background-color: #d32f2f;
+            color: white;
+        }
+
+        .form {
+            background-image: url(bg-img-3.jpg);
+            display: flex;
+            text-align: center;
+            padding: 30px 30px 30px 95px;
+        }
+
+        .highlight {
+            color: RED;
+        }
+
+        /* For mobile devices (max-width: 576px) */
+        @media (max-width: 576px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+            }
+
+            .header-section {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .container {
+                margin-top: 50px;
+                height: auto;
+                padding: 20px;
+            }
+
+            form {
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            .btn-group {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .btn-group .btn {
+                margin-bottom: 10px;
+            }
+
+            .row {
+                margin-top: 20px;
+            }
+
+            .len,
+            .len1,
+            .len2 {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .slideshow-container {
+                margin-top: 20px;
+            }
+        }
+
+        /* For tablets (max-width: 768px) */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                margin: 0;
+            }
+
+            .header-title {
+                margin: 0;
+            }
+
+            .container {
+                height: auto;
+            }
+
+            .btn-group {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .btn-group .btn {
+                margin-bottom: 10px;
+            }
+
+            .rob {
+                flex-direction: column;
+            }
+
+            .rob div {
+                margin: 10px 0;
+            }
+
+            .form {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .form iframe {
+                width: 100%;
+                height: 300px;
+            }
+
+            .len,
+            .len1,
+            .len2 {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+
+        /* For desktops (max-width: 992px) */
+        @media (max-width: 992px) {
+            .header {
+                margin: 0;
+            }
+
+            .header-section {
+                margin: 10px;
+                text-align: center;
+            }
+
+            .container {
+                margin-top: 50px;
+                height: auto;
+            }
+
+            form {
+                width: 80%;
+                margin: 20px auto;
+            }
+
+            .slideshow-container {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .len,
+            .len1,
+            .len2 {
+                width: 100%;
+            }
+
+            .rob {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .rob div {
+                margin: 10px 0;
+            }
+
+            .form {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .form iframe {
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        /* For large desktops (max-width: 1200px) */
+        @media (max-width: 1200px) {
+            .header {
+                margin-right: 20px;
+            }
+
+            .header-section {
+                margin: 10px;
+            }
+
+            .container {
+                margin-top: 70px;
+                height: auto;
+            }
+
+            form {
+                width: 85%;
+                margin: 50px auto;
+            }
+
+            .slideshow-container {
+                margin-top: 30px;
+            }
+
+            .form {
+                padding: 30px;
+            }
+
+            .rob {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .rob div {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div class="header-section">
+                <div class="header-logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <div class="header-title">Level</div>
+            </div>
+
+            <nav>
+                <div class="btn-group d-5" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-danger btn-lg" for="btnradio1">HOME</label>
+
+                    <label class="btn btn-outline-secondary btn-lg" for="btnradio2">PORTFOLIO</label>
+                    <label class="btn btn-outline-secondary btn-lg" for="btnradio3">BLOG ENTRIES</label>
+                    <label class="btn btn-outline-secondary btn-lg" for="btnradio4">CONTACT US</label>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <form class="row g-2">
+                        <div class="col-md-4 form-group">
+                            <span class="form-icon"><img src="location.png"width="20px"height="20px" style="margin-bottom: 10px;"></span>
+                            <input type="text" class="form-control ps-5" placeholder="Type your destination...">
+                        </div>
+
+                        <div class="col-md-4 form-group">
+                            <span class="form-icon"><img src="calendar.png"width="20px" height="20px" style="margin-bottom: 10px;"></span>
+                            <input type="text" class="form-control ps-5" placeholder="Check In">
+                        </div>
+
+                        <div class="col-md-4 form-group">
+                            <span class="form-icon"><img src="calendar.png"width="20px" height="20px" style="margin-bottom: 10px;"></span>
+                            <input type="text" class="form-control ps-5" placeholder="Check Out">
+                        </div>
+
+                        <div class="col-md-3 form-group">
+                            <span class="form-icon">&#128100;</span>
+                            <select class="form-select ps-5">
+                                <option>Adult</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3 form-group">
+                            <span class="form-icon">&#128102;</span>
+                            <select class="form-select ps-5">
+                                <option>Children</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-2 form-group">
+                            <span class="form-icon">&#128716;</span>
+                            <select class="form-select ps-5">
+                                <option>Room</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-red w-100">CHECK AVAILABILITY</button>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="help-text">Need Help?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div><img src="tape.png"></div>
+
+        <div style="display: flex;text-align: center;width: 75%; height: 75%;margin-left: 170px; margin-top: 100px;">
+            <div style="width: 490px; ">
+                <img src="hamer.png">
+                <h3 style="color: #f44336;">Pellentesque accumsan arcu<br>nec dolor tepus</h3>
+                <p>Pellentesque at velit ante.Duis sceleriesque metus el felis porttitor gravida.Donec at felis
+                    libero.Mauris odio tortor.</p>
+                <h6 style="color: #f44336;">CONTINUE READING...</h6>
+            </div>
+            <div style="width: 490px; margin-top: 10px;">
+                <img src="flight.png">
+                <h3 style="color: #f44336;">Etiam aliquam acu at maris<br>Consecteture</h3>
+                <p>Pellentesque at velit ante.Duis sceleriesque metus el felis porttitor gravida.Donec at felis
+                    libero.Mauris odio tortor.</p>
+                <h6 style="color: #f44336;">CONTINUE READING...</h6>
+            </div>
+            <div style="width: 490px; margin-top: 10px;">
+                <img src="fan.png">
+                <h3 style="color: #f44336;">Duis scelerisque metus vel<br>felis porttitor</h3>
+                <p>Pellentesque at velit ante.Duis sceleriesque metus el felis porttitor gravida.Donec at felis
+                    libero.Mauris odio tortor.</p>
+                <h6 style="color: #f44336;">CONTINUE READING...</h6>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <div style="display: flex; margin-left: 170px; background-color: white;">
+            <div style="width: 350px; height: 400;">
+                <img src="img-01.jpg">
+                <h5 style="margin-left: 25px; margin-top: 20px;">NUNC IN FELIS ALIQUET METUS<br>LUCTUS IACULIS</h5>
+                <p style="margin-left: 25px;">Aliquam ac lacus volutapt,dictum risus at,scelerisque nulla.nullam
+                    solicitious at augue venenatis elefiend.nulla ligula,egestas sit amet viverra id,iaculis sit amet
+                    ligula</p>
+                <button
+                    style="width: 45vh; height: 6vh; background-color: #f44336;color: aliceblue; margin-left: 25px;border-color: red;"
+                    type="button">GET MORE INFO.</button>
+            </div>
+            <div style="width: 350px; height: 400; margin-left:40px ; background-color: white;">
+                <img src="img-02.jpg">
+                <h5 style="margin-left: 25px;margin-top: 20px;">SED CURSUS DICTUM NUNC QUIS<br>MOLESTIE</h5>
+                <p style="margin-left: 25px;">pellentesque quis dui sit amet purus scelerisque elefeind sed ut
+                    eros.morbi viverra blandit massa in varius.sed nec ex eu ex tincidiunt iaculis.curabitur eget turpis
+                    gravida</p>
+                <button
+                    style="width: 45vh; height: 6vh;  background-color: #f44336;color: aliceblue; margin-left: 25px;border-color: red; "
+                    type="button">VIEW DETAIL</button>
+            </div>
+            <div style="width: 380px; height: 550; margin-left:50px; margin-bottom: 25px; background-color: white;">
+                <div style="background-color: red; color: aliceblue;">
+                    <h3 style="margin: 10px;"> Recommended places</h3>
+                    <p style="margin: 5px;">Enamel pin cliche tilde,kitsch and VHS thundercasts</p>
+                </div>
+                <div style="display: flex;  margin: 10px;">
+                    <div> <img src="tn-img-01.jpg"></div>
+                    <div style="margin-top: 25px; margin-left: 20px; background-color: white;">
+                        <h5 style=" background-color: white;">EUROPE</h5>
+                    </div>
+                </div>
+                <div style="display: flex;  margin: 10px;">
+                    <div> <img src="tn-img-02.jpg"></div>
+                    <div style="margin-top: 25px; margin-left: 20px;">
+                        <h5>ASIA</h5>
+                    </div>
+                </div>
+                <div style="display: flex;  margin: 10px;">
+                    <div> <img src="tn-img-03.jpg"></div>
+                    <div style="margin-top: 25px; margin-left: 20px;">
+                        <h5>AFRICA</h5>
+                    </div>
+                </div>
+                <div style="display: flex; margin: 10px;">
+                    <div><img src="tn-img-04.jpg"></div>
+                    <div style="margin-top: 25px; margin-left: 20px;">
+                        <h5>SOUTH AMERICA</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="i1.jpg" style="width:100%">
+        </div>
+
+
+        <div class="mySlides fade">
+            <img src="i2.jpg" style="width:100%">
+        </div>
+
+
+        <div class="mySlides fade">
+            <img src="i3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="i4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="i5.jpg" style="width:100%">
+        </div>
+    </div>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <div><img src="play.png" width="100%" height="350px"></div>
+    <div class="rob">
+        <div style="width: 400px;height: 130px; ">
+            <h3 style=" margin-left: 355px;margin-top: 300px;font-size: 40px;">ASIA</h3>
+            <h5 style="color: #f44336; margin-left: 345px;margin-top: 3px; font-size: 25px;">singapore</h5>
+        </div>
+        <div style="width: 800px;height: auto; margin-left: 300px; background-color:white;border-radius: 1px solid;">
+            <div style="display: flex; margin:10px;">
+                <div style=" margin-right: 20px;"><img src="img-03.jpg" width="175px" height="155px"></div>
+                <div>
+                    <h5 style="color: #f44336;">Suspedisse vel est libero sem phasellus ac<br> laoreet</h5>
+                    <p>Integer libero purus, consecture vitae posure quis, maximus id diam.vivamus eget tellus
+                        ornare,sollicitudis qum id,dictum nulla.phasellus finibus rhoncus justo,tempus elefiend neque
+                        dicum ac.aenea metus leo,consecteture non.</p>
+                </div>
+            </div>
+
+            <div style="display: flex; margin:10px; ">
+                <div style=" margin-right: 20px;"><img src="img-04.jpg" width="175px" height="155px"></div>
+                <div>
+                    <h5>Suspendisse vel est libero sem phasellus ac <br>laoreet</h5>
+                    <p>Duis accumsan sagittis tortor in ultrices.praesent tortor ante,fringilla ac nibh
+                        porttitor,fermentum commando nulla.</p>
+                    <h6 style="color: #f44336;">CONTINUE READING...</h6>
+                </div>
+            </div>
+            <div style="display: flex;margin:10px;">
+                <div style=" margin-right: 20px;"><img src="img-05.jpg" width="175px" height="155px"></div>
+                <div>
+                    <h5>Faucibus dolor ligula nisl metus auctor aliquet</h5>
+                    <p>Nunc in feils aliquet metus luctus iaculis vel et nisi.Nulla venenatis nisl orci,laroreet
+                        ultricies massa tristique id.</p>
+                    <h6 style="color: #f44336;">CONTINUE READING...</h6>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="form">
+        <div style="margin-left: 20px; margin-top: 75px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3805.30190981885!2d78.39954787493728!3d17.493095683412278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1725483754956!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div style="margin-left: 150px; padding:30px 100px 30px 30px ; gap: 10px;  margin-top: 70px; ">
+            <forms>
+                <input class="len" type="text" placeholder="name"><br>
+
+                <input class="len" type="text" placeholder="Email"><br>
+
+                <input class="len" type="text" placeholder="Subject"><br>
+                <input class="len1" type="text" placeholder="Message"><br>
+                <button class="len2" type="button">SEND MESSAGE NOW</button>
+            </forms>
+        </div>
+
+    </div>
+    <div
+        style="width: 100%;height: 100px;color: aliceblue;background-color: black;text-align: center;padding: 30px 10px 30px 10px;">
+        <p>Copyright @ 2018 Your Company -Designed by <span class=" highlight">@AKHIL KANKALLA</span>
+    </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
